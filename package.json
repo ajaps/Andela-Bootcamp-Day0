@@ -1,0 +1,18 @@
+{
+  "name": "andela-bootcamp-day0",
+  "version": "1.0.0",
+  "description": "Andela bootcamp day0 exercise getPrime",
+  "main": "App/index.js",
+  "scripts": {
+    "test": "jasmine Test/test.js"
+  },
+  "author": "Ajaps Franklin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/AjapsFranklin/Andela-Bootcamp-Day0.git"
+  },
+  "dependencies": {
+    "jasmine": "^2.6.0"
+  }
+}
