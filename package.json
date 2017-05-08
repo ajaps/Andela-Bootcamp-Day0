@@ -10,7 +10,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "\u0016https://github.com/AjapsFranklin/Andela-Bootcamp-Day0.git"
+    "url": "git+https://github.com/AjapsFranklin/Andela-Bootcamp-Day0.git"
   },
   "dependencies": {
     "jasmine": "^2.6.0"
