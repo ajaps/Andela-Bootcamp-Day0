@@ -14,15 +14,14 @@
         expect(myApp.myPrime([5,6])).toEqual('invalid input');
       });
 
-      it("should return 'invalid input' for 254.34 ", function() {
+      it("should return 'invalid input' for input with decimal number 254.34 ", function() {
+        expect(myApp.myPrime(254.34)).toEqual('invalid input');
+      });
+      it("should return 'invalid input' for input with decimal number 254.34 ", function() {
         expect(myApp.myPrime(254.34)).toEqual('invalid input');
       });
     });
    describe("Case for input less than 3", function() {
-      it("should return 'input is 0' for 0", function() {
-        expect(myApp.myPrime(0)).toBe("input is 0");
-      });
-
       it("should return [1] for 0", function() {
         expect(myApp.myPrime(0)).toEqual([1]);
       });
@@ -41,14 +40,13 @@
         expect(myApp.myPrime(10)).toEqual([2,3,5,7]);
       });
 
-      it("should return [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 51 ] for 51", function() {
-        expect(myApp.myPrime(51)).toEqual([ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 51 ]);
+      it("should return [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47] for 51", function() {
+        expect(myApp.myPrime(51)).toEqual([ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
       });
-
       it("should return 'large Array' for 100000000", function() {
         expect(myApp.myPrime(100000000)).toBeDefined();
       });
-
+      
       var arr = jasmine.arrayContaining([13, 541])
       it("should contain 'large Array' for 100000", function() {
         expect(myApp.myPrime(100000)).toEqual(arr);
