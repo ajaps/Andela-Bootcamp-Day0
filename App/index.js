@@ -14,6 +14,7 @@ const getPrimes = (integerValue) =>{
       return "invalid input";
     }
     else if(typeof(integerValue) === "number"){
+	
       let theArray =[];
       theArray.length=integerValue;
       theSquareRoot = Math.sqrt(integerValue);
@@ -27,6 +28,8 @@ const getPrimes = (integerValue) =>{
           }
         }
       }
+	  
+	  //Puts the result into an array
       var arrayResult=[2];
       for(i=3; i<=integerValue; i++){
         if(theArray[i]!=false){
