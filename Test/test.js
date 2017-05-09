@@ -43,9 +43,6 @@
       it("should return [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47] for 51", function() {
         expect(myApp.myPrime(51)).toEqual([ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]);
       });
-      it("should return 'large Array' for 100000000", function() {
-        expect(myApp.myPrime(100000000)).toBeDefined();
-      });
       
       var arr = jasmine.arrayContaining([13, 541])
       it("should contain 'large Array' for 100000", function() {
